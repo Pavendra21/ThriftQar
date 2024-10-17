@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Ignore node_modules in client and server
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment variables
+.env
+
+# Package lock files (if needed)
+package-lock.json
+
+# IDE configuration
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Operating system files
+*.swp
+*.swo
