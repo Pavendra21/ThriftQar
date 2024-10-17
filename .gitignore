@@ -16,8 +16,7 @@ build/
 # Environment variables
 .env
 
-# Package lock files (if needed)
-package-lock.json
+ 
 
 # IDE configuration
 .vscode/
