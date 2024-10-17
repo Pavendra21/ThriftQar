@@ -21,7 +21,7 @@ const Products = () => {
                 const category = queryParams.get('category');
                 
                 // Make a request to fetch products based on the category
-                const response = await axios.get(`http://localhost:8000/api/products?category=${category || ''}`);
+                const response = await axios.get(`https://thriftqar-production.up.railway.app/api/products?category=${category || ''}`);
                 setData(response.data);
                 setLoading(false);
             } catch (error) {

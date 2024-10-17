@@ -103,7 +103,7 @@ const AddItem = () => {
 
 try {
 
-    const response = await axios.post('http://localhost:8000/api/additem', formData, {
+    const response = await axios.post('https://thriftqar-production.up.railway.app/api/additem', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

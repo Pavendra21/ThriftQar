@@ -28,7 +28,7 @@ const EditProfile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/userprofile', { withCredentials: true });
+        const response = await axios.get('https://thriftqar-production.up.railway.app/api/userprofile', { withCredentials: true });
         setFormData({
           name: response.data.user.name,
           email: response.data.user.email,

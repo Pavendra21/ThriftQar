@@ -99,7 +99,7 @@ const Signup = () => {
 
         try {
 
-            const response = await axios.post('http://localhost:8000/api/signup', formData)
+            const response = await axios.post('https://thriftqar-production.up.railway.app/api/signup', formData)
 
             if (response.status === 200) {
 

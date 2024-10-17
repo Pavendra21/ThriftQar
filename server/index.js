@@ -12,7 +12,7 @@ const path = require('path');
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3000', // Remove trailing slash
+    origin: 'https://thrift-qar.vercel.app', // Remove trailing slash
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept'], // Optional: add headers you expect
     credentials: true, // This is the key part

@@ -20,7 +20,7 @@ const UserProfile = () => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/userprofile', { withCredentials: true });
+        const response = await axios.get('https://thriftqar-production.up.railway.app/api/userprofile', { withCredentials: true });
         setUser(response.data.user);
         setLoading(false); // Stop loading after data is fetched
       } catch (err) {
@@ -49,7 +49,7 @@ const UserProfile = () => {
 
 const handleLogOut = async () => {
   try {
-    await axios.post('http://localhost:8000/api/logout', {}, { withCredentials: true });
+    await axios.post('https://thriftqar-production.up.railway.app/api/logout', {}, { withCredentials: true });
     
     // Clear client-side token if necessary (although backend should handle this)
     Cookies.remove('token', { path: '/' });

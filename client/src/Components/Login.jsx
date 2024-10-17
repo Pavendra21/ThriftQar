@@ -44,7 +44,7 @@ const Login = () => {
 
         try {
 
-            const response = await axios.post('http://localhost:8000/api/login', loginData, { withCredentials: true })
+            const response = await axios.post('https://thriftqar-production.up.railway.app/api/login', loginData, { withCredentials: true })
             if (response.status === 200) {
                   toast.success('Login sucessfull')
                 setTimeout(()=>{
