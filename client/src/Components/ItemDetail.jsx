@@ -15,7 +15,7 @@ const ItemDetail = () => {
 
     const fetchDetails = async () => {
 
-      const response = await axios.get(`https://thriftqar-production.up.railway.app/api/products/${id}`)
+      const response = await axios.get(`https://thriftqar-production.up.railway.app/api/products/${id}`);
       setProduct(response.data)
       setLoading(false)
 
@@ -50,7 +50,8 @@ const ItemDetail = () => {
           {/* Product Image */}
           <div className="lg:w-1/2 ml-32">
 
-            <img src={`https://thriftqar-production.up.railway.app${product.image}`} alt={product.name} className="w-full max-w-sm h-5/6 object-cover rounded-lg shadow-lg" />
+<img src={`https://thriftqar-production.up.railway.app${product.image}`} alt={product.name} className="w-full max-w-sm h-5/6 object-cover rounded-lg shadow-lg" />
+
 
           </div>
 
