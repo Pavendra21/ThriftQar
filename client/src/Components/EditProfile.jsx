@@ -74,7 +74,7 @@ const EditProfile = () => {
     if (!isValid) return;
 
     try {
-      await axios.put('http://localhost:8000/api/editprofile', formData, { withCredentials: true });
+      await axios.put('https://thriftqar-production.up.railway.app/api/editprofile', formData, { withCredentials: true });
       toast.success('Updated Successfully');
       navigate('/userprofile');
     } catch (error) {
