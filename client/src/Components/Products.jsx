@@ -54,7 +54,7 @@ const Products = () => {
                                 <div className="max-w-xs bg-white mt-8 shadow-lg rounded-lg overflow-hidden mx-auto">
                                     <Link to={`/products/${product._id}`}>
                                         <div className="flex items-center justify-center h-64 bg-gray-200">
-                                            <img src={`http://localhost:8000${product.image}`} alt={product.name} className="max-w-full max-h-full" />
+                                            <img src={`https://thriftqar-production.up.railway.app${product.image}`} alt={product.name} className="max-w-full max-h-full" />
                                         </div>
                                         <div className="p-4">
                                             <span className="text-gray-400 uppercase text-xs font-bold">{product.category}</span>
